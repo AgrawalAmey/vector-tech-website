@@ -1,0 +1,330 @@
+    body,html {
+        margin: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+    }
+    #WebGL-output{
+        position: absolute;
+        width: 40%;
+        height:60%;
+        bottom:2%;
+        right:-12%;
+        overflow: hidden;
+    }
+    #logo{
+    	position: absolute;
+    	bottom:1.5%;
+    	left: 1%;
+    	width: 18%;
+    }
+    #text_wrap{
+    	margin-left: 22%;
+    	margin-top: 7%;
+    	width: 60%;
+        height: 58%;
+    	position: relative;
+        overflow: hidden;
+        border-bottom: 2px solid #ffffff;
+    }
+
+    .title{
+    	float: left; 
+    	width: 100%;
+        position: absolute;
+        height: 15%;
+        top:0;
+    	
+    }
+
+    #inner{
+        position: absolute;
+        overflow: hidden;
+        top:5%;
+        width: 100%;
+        transition: width 0.8s ease-in-out 0s;
+        border-bottom: 2px solid #ffffff;
+    }
+
+    #text{
+        margin-left:7%;
+        width: 90%;
+        top: 25%;
+        overflow: scroll;
+        position: absolute;
+        height: 72%;
+
+    }
+    
+    #Home{
+    	float: left;
+    	position: absolute;
+        top: 25%;
+        transition: width 1.6s ease-in-out 0s;
+    }
+    
+    #Services{
+        float: left;
+        display: none;
+        position: absolute;
+        width: 100%;
+        transition: width 1.6s ease-in-out 0s;
+    }
+
+    .skills{
+        float: left;
+        width: 45%;
+    }
+    /*#Work{
+        display: none;
+    }*/
+    #Contact{
+        width: 100%;
+        float: left;
+        position: absolute;
+        display: none;
+        transition: width 1.6s ease-in-out 0s;
+    }
+    #about{
+        display: none;
+        position: absolute;
+        transition: width 1.6s ease-in-out 0s;
+    }
+
+    #container{
+    	position: absolute;
+    	top:0;
+    	left:0;
+    }
+
+    #fb{
+    	position: absolute;
+    	top: 2.5%;
+    	left: 1%;
+    	width: 3%
+    }
+    #tw{
+    	position: absolute;
+    	top: 10.5%;
+    	left: 1%;
+    	width: 3%
+    }
+
+
+    h1{
+    	color: #ffffff;
+    	font-size: 3em;
+		font-family: 'Orbitron', sans-serif;
+		font-weight: normal;
+        margin-bottom: 0;
+    }
+    p{
+    	color: #ffffff;
+    	font-size: 1.5em;
+		font-family: 'Glegoo', serif;
+		font-weight: normal;
+    }
+    span{
+        color: #ffffff;
+        font-size: 30px;
+        font-family: 'Glegoo', serif;
+        font-weight: normal;   
+    }
+
+    li{
+        color: #ffffff;
+        font-size: 1.4em;
+        font-family: 'Glegoo', serif;
+        font-weight: normal;
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-top: 1.5%;
+        margin-bottom: 1.5%;
+    }
+
+    /********Navigation ***********/
+   nav{
+   		position: absolute;
+        right: 1%;
+    }
+
+   nav a {
+	float: left;
+	display: inline-block;
+	margin: 20px 10px;
+	outline: none;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 400;
+	text-shadow: 0 0 0px rgba(255,255,255,0.3);
+	font-size: 1.35em;
+    font-family: 'Michroma', serif;
+	}
+
+	nav a:hover,
+	nav a:focus {
+		outline: none;
+	}
+
+	.navigator a::before,
+	.navigator a::after {
+		display: inline-block;
+		opacity: 0;
+		-webkit-transition: -webkit-transform 0.3s, opacity 0.2s;
+		-moz-transition: -moz-transform 0.3s, opacity 0.2s;
+		transition: transform 0.3s, opacity 0.2s;
+	}
+
+	.navigator a::before {
+		margin-right: 10px;
+		content: '[';
+		-webkit-transform: translateX(20px);
+		-moz-transform: translateX(20px);
+		transform: translateX(20px);
+	}
+
+	.navigator a::after {
+		margin-left: 10px;
+		content: ']';
+		-webkit-transform: translateX(-20px);
+		-moz-transform: translateX(-20px);
+		transform: translateX(-20px);
+	}
+
+	.navigator a:hover::before,
+	.navigator a:hover::after,
+	.navigator a:focus::before,
+	.navigator a:focus::after {
+		opacity: 1;
+		-webkit-transform: translateX(0px);
+		-moz-transform: translateX(0px);
+		transform: translateX(0px);
+	}
+
+
+	/********scroll bar ***********/
+
+	::-webkit-scrollbar {
+	    width: 7px;
+	}
+	 
+	/* Track */
+	::-webkit-scrollbar-track {
+	    -webkit-border-radius: 0px;
+	    border-radius: 0px;
+	}
+	 
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+	    -webkit-border-radius: 0px;
+	    border-radius: 0px;
+	    background: rgba(255,0,0,0.8); 
+	}
+
+	::-webkit-scrollbar-corner{
+		width: 0%;
+		height: 0%
+	}
+
+	/*********social icon hover**********/
+    
+    svg:hover path {
+    fill: #ffffff;
+    cursor: pointer;
+	}
+
+    /* Form styling */
+    .form_style {
+        margin-left:auto;
+        margin-right:auto;
+        max-width: 90%;
+        padding: 25px 15px 25px 10px;
+        color: #fff;
+        text-shadow: 0 0 0px rgba(255,255,255,0.3);
+        border:0;
+    }
+    label {
+        display: block;
+        margin: 0px;
+    }
+    .form span {
+        float: left;
+        width: 20%;
+        text-align: right;
+        padding-right: 10px;
+        margin-top: 10px;
+        color: #Fff;
+        font-size: 1.1em;
+        font-weight: normal;
+    }
+
+    input[type="text"], input[type="email"], textarea{
+        border: 0;
+        color: #fff;
+        height: 30px;
+        margin-bottom: 16px;
+        margin-right: 6px;
+        margin-top: 2px;
+        outline: 0 none;
+        padding: 3px 3px 3px 5px;
+        width: 70%;
+        line-height:15px;
+        background-color: #f00;
+        opacity: 0.8;
+        font-size: 1em;
+        font-family: 'Glegoo', serif;
+    }
+
+    input {
+        font-size: 1em;
+        font-family: 'Glegoo', serif;
+    }
+
+    textarea{
+        height:100px;
+        background: #F00;
+        color: #FFF;
+        opacity: 0.8;
+        padding: 5px 3px 3px 5px;
+    }
+    .button {
+        background: #F00;
+        opacity: 0.8;
+        border: none;
+        padding: 10px 25px 10px 25px;
+        color: #FFF;
+        box-shadow: 0;
+        border-radius: 0px;
+        cursor: pointer;
+        width: 30%;
+        margin-left: 21%;
+    }
+    .button:hover {
+        background: #FF0000;
+        opacity: 0.8;
+        border: 2px solid #FF0000;
+    }
+
+    ::-webkit-input-placeholder {
+        color: #fff;
+        font-family: 'Glegoo';
+        font-size: 0.8em;
+        opacity: 1 !important; /* for chrome */
+    }
+
+    ::-webkit-textarea-placeholder {
+        color: #fff;
+        font-family: 'Glegoo';
+        font-size: 0.8em;
+        opacity: 1 !important; /* for chrome */
+    }
+
+    ::-webkit-button-placeholder {
+        color: #fff;
+        font-family: 'Glegoo';
+        font-size: 1em;
+        opacity: 1 !important; /* for chrome */
+    }
